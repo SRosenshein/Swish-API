@@ -95,4 +95,13 @@ RSpec.describe Api::UsersController, type: :controller do
             it {should respond_with 422}
         end
     end
+    
+    describe "DELETE #destroy" do
+        let(:user) {create(:user)}
+        
+        it "returns http status 204" do
+            delete :destroy, params: {id: user.id, format: :json}
+            expect(response).to have_http_status(204)
+        end
+    end
 end
