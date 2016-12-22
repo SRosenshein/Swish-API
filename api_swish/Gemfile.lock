@@ -46,6 +46,7 @@ GEM
     bcrypt (3.1.11)
     builder (3.2.2)
     byebug (9.0.6)
+    coderay (1.1.1)
     concurrent-ruby (1.0.3)
     devise (4.2.0)
       bcrypt (~> 3.0)
@@ -92,6 +93,10 @@ GEM
       hashie (>= 1.2, < 4)
       rack (>= 1.0, < 3)
     orm_adapter (0.5.0)
+    pry (0.10.4)
+      coderay (~> 1.1.0)
+      method_source (~> 0.8.1)
+      slop (~> 3.4)
     puma (3.6.2)
     rack (2.0.1)
     rack-test (0.6.3)
@@ -148,6 +153,7 @@ GEM
     shoulda-context (1.2.2)
     shoulda-matchers (2.8.0)
       activesupport (>= 3.0.0)
+    slop (3.6.0)
     spring (2.0.0)
       activesupport (>= 4.2)
     spring-watcher-listen (2.0.1)
@@ -182,6 +188,7 @@ DEPENDENCIES
   ffaker
   listen (~> 3.0.5)
   omniauth
+  pry
   puma (~> 3.0)
   rails (~> 5.0.1)
   rspec-rails (>= 3.5.0)
