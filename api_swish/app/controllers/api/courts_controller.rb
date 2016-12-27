@@ -37,6 +37,11 @@ class Api::CourtsController < ApplicationController
   def destroy
     @court.destroy
   end
+  
+  def search
+    @courts = Court.near(params[:zip_code], params[:distance])
+    render json: @courts
+  end
 
   private
     # Use callbacks to share common setup or constraints between actions.
