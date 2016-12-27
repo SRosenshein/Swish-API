@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  namespace :api, defaults: {format: :json}, constraints: {subdomain: 'api'}, path: '/' do
+  namespace :api, defaults: {format: :json}, path: '/api' do
       resources :users, only: [:show, :create, :update, :destroy]
       mount_devise_token_auth_for 'User', at: 'auth'
       resources :courts

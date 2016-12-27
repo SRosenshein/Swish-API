@@ -13,9 +13,9 @@
 ActiveRecord::Schema.define(version: 20161226174516) do
 
   create_table "courts", force: :cascade do |t|
-    t.string   "name"
-    t.string   "description"
-    t.string   "status"
+    t.string   "name", default: "", null: false
+    t.string   "description", default: ""
+    t.string   "status", default: ""
     t.string   "address"
     t.float    "latitude"
     t.float    "longitude"
