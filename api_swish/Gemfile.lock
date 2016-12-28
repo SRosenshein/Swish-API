@@ -190,6 +190,7 @@ DEPENDENCIES
   ffaker
   geocoder
   listen (~> 3.0.5)
+  nokogiri
   omniauth
   pry
   puma (~> 3.0)
