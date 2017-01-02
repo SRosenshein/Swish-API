@@ -25,3 +25,4 @@ doc.css('facility').each do |node|
 end
 
 Court.create(all_courts)
+
