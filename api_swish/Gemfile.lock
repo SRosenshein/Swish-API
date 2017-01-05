@@ -100,6 +100,7 @@ GEM
       slop (~> 3.4)
     puma (3.6.2)
     rack (2.0.1)
+    rack-cors (0.4.0)
     rack-test (0.6.3)
       rack (>= 1.0)
     rails (5.0.1)
@@ -194,6 +195,7 @@ DEPENDENCIES
   omniauth
   pry
   puma (~> 3.0)
+  rack-cors
   rails (~> 5.0.1)
   rspec-rails (>= 3.5.0)
   shoulda
