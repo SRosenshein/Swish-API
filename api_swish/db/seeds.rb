@@ -16,8 +16,8 @@ doc.css('facility').each do |node|
     
     all_courts << {
         name: name,
-        description: "",
-        status: "",
+        description: "description",
+        status: "no status",
         address: address,
         latitude: lat,
         longitude: long
